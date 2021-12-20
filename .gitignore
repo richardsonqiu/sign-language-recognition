@@ -1,0 +1,7 @@
+.vscode/
+MP-data/
+not-used/
+models/
+venv/
+wandb/
+videos/
