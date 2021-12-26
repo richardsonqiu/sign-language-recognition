@@ -6,3 +6,4 @@ venv/
 wandb/
 videos/
 dataset/
+test_videos/
