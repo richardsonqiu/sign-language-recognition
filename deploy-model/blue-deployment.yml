@@ -1,0 +1,16 @@
+$schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
+# invoke completions (Ctrl+Space, Cmd+Space) to see the list of models available
+name: blue
+endpoint_name: signrecognition
+model: 
+  local_path: gw-model/model/glamorous-wave.onnx
+code_configuration:
+  code:
+    local_path: gw-model/onlinescoring/
+  scoring_script: score.py
+# invoke completions (Ctrl+Space, Cmd+Space) to see the list of environments available
+environment: 
+  conda_file: gw-model/environment/sign-venv3.yml
+  image: mcr.microsoft.com/azureml/onnxruntime-1.6-ubuntu18.04-py37-cpu-inference:latest
+instance_type: Standard_F2s_v2
+instance_count: 1

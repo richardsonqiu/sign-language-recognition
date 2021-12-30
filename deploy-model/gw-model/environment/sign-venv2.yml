@@ -1,0 +1,15 @@
+name: sign-venv2
+channels:
+  - defaults
+dependencies:
+  - h5py=3.6.0=py39h3de5c98_0
+  - jpeg=9d=h2bbff1b_0
+  - keras=2.6.0=py39hd3eb1b0_0
+  - keras-preprocessing=1.1.2=pyhd3eb1b0_0
+  - numpy=1.21.2=py39hfca59bb_0
+  - numpy-base=1.21.2=py39h0829f74_0
+  - scipy=1.7.1=py39hbe87c03_2
+  - tensorflow=2.6.0=mkl_py39h31650da_0
+  - tensorflow-base=2.6.0=mkl_py39h9201259_0
+  - tensorflow-estimator=2.6.0=pyh7b7c402_0
+prefix: C:\Users\lenovo\Anaconda3\envs\sign-venv2
