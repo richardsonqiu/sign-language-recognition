@@ -13,7 +13,7 @@ locations = (
 )
 keypoints_len = reduce(lambda r, loc: r + loc[0] * loc[1], locations, 0)
 
-VIDEO_PATH = 'videos'
+VIDEO_PATH = 's2s_vids_extra'
 
 def extract_keypoints(results):
     pose = np.array([[res.x, res.y, res.z, res.visibility] for res in results.pose_landmarks.landmark]).flatten() if results.pose_landmarks else np.zeros(33*4)
@@ -46,6 +46,8 @@ with mp.solutions.holistic.Holistic(min_detection_confidence=0.5, min_tracking_c
             
             save_path = os.path.join('tracks_binary', word)
             os.makedirs(save_path, exist_ok=True)
-            track.astype('float32').tofile(f'tracks_binary/{word}/{name}')
+            bin_name = name[:-4]
+            print(bin_name)
+            track.astype('float32').tofile(f'tracks_binary/{word}/{bin_name}')
 
     cap.release()

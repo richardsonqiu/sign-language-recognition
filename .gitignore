@@ -7,3 +7,11 @@ wandb/
 videos/
 dataset/
 test_videos/
+s2s_vids/
+poc_tracks/
+.zip
+backup_dataset/
+deploy-model/
+s2s_vids_extra/
+# tracks_binary/
+# tracks_binary_manual/

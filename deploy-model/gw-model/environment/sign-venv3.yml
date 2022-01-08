@@ -1,6 +1,0 @@
-name: sign-venv3
-channels:
-  - defaults
-dependencies:
-  - tensorflow=2.6.0
-prefix: C:\Users\lenovo\Anaconda3\envs\sign-venv3
