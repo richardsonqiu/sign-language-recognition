@@ -17,7 +17,7 @@ def init():
     # model = Model(ws, name='glamorous-wave-9',version=1)
     # session = onnxruntime.InferenceSession(model)
     session = onnxruntime.InferenceSession(
-        os.path.join(os.getenv("AZUREML_MODEL_DIR"), "glamorous-wave-9.onnx")
+        os.path.join(os.getenv("AZUREML_MODEL_DIR"), "fresh-fire-9.onnx")
     )
 
 
